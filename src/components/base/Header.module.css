@@ -1,0 +1,25 @@
+.btnMobile {
+    display: none;
+}
+
+.open {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .btnMobile {
+        display: block;
+    }
+
+    .btnsLinks {
+        display: none;
+    }
+
+    .selectLanguage {
+        display: none;
+    }
+
+    .open {
+        display: flex;
+    }
+}
