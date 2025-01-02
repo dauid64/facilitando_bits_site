@@ -1,0 +1,9 @@
+{
+    "HomePage": {
+      "title": "Olá Mundo!"
+    },
+    "SelectLanguage": {
+        "pt": "Português",
+        "en": "Inglês"
+    }
+}

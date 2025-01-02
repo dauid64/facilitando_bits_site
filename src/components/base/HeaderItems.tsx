@@ -1,6 +1,6 @@
 import Link from "../common/Link";
-import Select from "../common/Select";
 import styles from "./Header.module.css";
+import LanguageSelect from "./LanguageSelect";
 
 interface HeaderItemsProps {
     open: boolean;
@@ -16,10 +16,7 @@ export default function HeaderItems({
             <Link href={"/"} className="text-md" content="Sobre"/>
         </div>
         <div className={`flex flex-col items-center`}>
-            <Select className={`${styles.selectLanguage} ${open ? styles.open : ""}`}>
-                <option value="US">Português</option>
-                <option value="CA">Inglês</option>
-            </Select>
+            <LanguageSelect className={`${styles.selectLanguage} ${open ? styles.open : ""}`}/>
         </div>
     </>
 

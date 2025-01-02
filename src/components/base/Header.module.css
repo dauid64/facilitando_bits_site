@@ -6,6 +6,10 @@
     display: none;
 }
 
+.selectLanguage.open.container-language {
+    top: 1.5rem;
+}
+
 @media screen and (max-width: 780px) {
     .btnMobile {
         display: block;
@@ -15,8 +19,16 @@
         display: none;
     }
 
+    .btnsLinks.open {
+        gap: 0.5rem;
+    }
+
     .selectLanguage {
         display: none;
+    }
+
+    .selectLanguage.open {
+        display: block;
     }
 
     .open {
