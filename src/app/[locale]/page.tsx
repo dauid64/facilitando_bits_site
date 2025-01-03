@@ -1,11 +1,14 @@
-import { useTranslations } from "next-intl";
+import { mockPosts } from "../../../constants/posts";
+import CardPost from "@/components/posts/CardPost";
 
 export default function Home() {
-  const t = useTranslations('HomePage');
+  const posts = mockPosts;
 
   return (
-    <div>
-      <h1>{t('title')}</h1>
+    <div className="m-16">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 place-items-center">
+          <CardPost posts={posts} />
+      </div>
     </div>
   );
 }

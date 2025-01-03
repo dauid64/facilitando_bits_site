@@ -5,5 +5,12 @@
     "SelectLanguage": {
         "pt": "Portuguese",
         "en": "English"
+    },
+    "Header": {
+        "posts": "Posts",
+        "about": "About"
+    },
+    "Posts": {
+      "readMore": "Read more"
     }
 }
