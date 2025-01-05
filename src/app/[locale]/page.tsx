@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <div className="m-16">
       <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 place-items-center">
-          <CardPost posts={posts} />
+        {posts.map((post) => {
+          return <CardPost post={post} key={post.id} />;
+        })}
       </div>
     </div>
   );
