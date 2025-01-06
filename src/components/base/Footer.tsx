@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CiLinkedin } from "react-icons/ci";
 import { FaRegAddressBook } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 export function Footer() {
     return (
@@ -10,10 +11,13 @@ export function Footer() {
                 </span>
                 <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                     <li>
-                        <Link href="https://www.linkedin.com/in/carlos-david-castro-de-souza-neto-795a83210" className="hover:underline me-4 md:me-6 flex"><CiLinkedin size={20} />LinkedIn</Link>
+                        <Link href="https://www.linkedin.com/in/carlos-david-castro-de-souza-neto-795a83210" className="hover:underline me-4 md:me-6 flex"><CiLinkedin size={20} className="mr-0.5"/>LinkedIn</Link>
                     </li>
                     <li>
-                        <Link href="https://lattes.cnpq.br/0137678114955696" className="hover:underline me-4 md:me-6 flex"><FaRegAddressBook size={18} />Lattes</Link>
+                        <Link href="https://lattes.cnpq.br/0137678114955696" className="hover:underline me-4 md:me-6 flex"><FaRegAddressBook size={18} className="mr-0.5"/>Lattes</Link>
+                    </li>
+                    <li>
+                        <Link href="mailto:carlosdauid64br@gmail.com" className="hover:underline me-4 md:me-6 flex"><MdOutlineEmail size={18} className="mr-0.5"/>E-mail</Link>
                     </li>
                 </ul>
             </div>
