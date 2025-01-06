@@ -1,8 +1,20 @@
 import { mockPosts } from "../../../constants/posts";
 import CardPost from "@/components/posts/CardPost";
+import { getLocale } from "next-intl/server";
 
-export default function Home() {
+export default async function Home() {
+  const locale = await getLocale();
+
   const posts = mockPosts;
+  const postsFetch = await fetch(
+    `${process.env.SERVER_URL}article?language=${locale}`
+  );
+  if (postsFetch.ok) {
+    const posts = await postsFetch.json();
+    console.log(posts);
+  } else {
+    console.error(postsFetch);
+  }
 
   return (
     <div className="m-16">
