@@ -7,6 +7,7 @@ import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import { Language } from "../../../constants/language";
+import { Footer } from "@/components/base/Footer";
 
 export const metadata: Metadata = {
   title: "Facilitando Bits",
@@ -43,7 +44,10 @@ export default async function RootLayout(
       <body className={karla.className + " bg-slate-800 text-white"}>
         <NextIntlClientProvider messages={messages}>
           <Header/>
-          {children}
+          <main className="flex flex-col flex-1">
+            {children}
+          </main>
+          <Footer/>
         </NextIntlClientProvider>
       </body>
     </html>

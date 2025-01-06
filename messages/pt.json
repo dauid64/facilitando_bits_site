@@ -12,5 +12,11 @@
     },
     "Posts": {
       "readMore": "Ler mais"
+    },
+    "About": {
+      "span1": "Olá! Meu nome é Carlos David, sou desenvolvedor de software com cerca de 3 anos de experiência na área e estudante de Computação pela Universidade de Brasília (UnB). Atualmente, trabalho como desenvolvedor na DataVirtus, assistente de pesquisa no Laboratório de Aprendizagem de Máquina em Finanças e Organizações (LAMFO), além de bolsista no projeto chamado \"UnB/MGI-SGD/FACE - Inteligência Artificial (IA) aplicada ao desenvolvimento de soluções para o Escritório de Inteligência Artificial do Governo Federal\".",
+      "span2": "O principal objetivo deste site é compartilhar conhecimento e promover discussões construtivas sobre tecnologia, uma área pela qual sou profundamente apaixonado. Além de servir como um portfólio para meus projetos e artigos.",
+      "span3": "Meu foco será, em grande parte, na linguagem Rust, que considero uma tecnologia incrível, mas que ainda é pouco debatida e explorada, especialmente aqui no Brasil. Acredito no enorme potencial e nos benefícios que o Rust pode trazer para o desenvolvimento de software, e espero contribuir para aumentar sua adoção e entendimento na comunidade.",
+      "span4": "Claro que não irei me limitar apenas a Rust, pretendo falar sobre outras linguagens, tecnologias e assuntos que achar interessante e que tenha algum conhecimento para compartilhar aqui. Fique à vontade para comentar nos artigos, me mandar mensagens e sugestões de temas para artigos futuros, estou sempre aberto a novas ideias e sugestões."
     }
 }
