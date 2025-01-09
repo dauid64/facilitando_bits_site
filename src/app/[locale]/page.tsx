@@ -6,14 +6,18 @@ export default async function Home() {
   const locale = await getLocale();
 
   const posts = mockPosts;
-  const postsFetch = await fetch(
-    `${process.env.SERVER_URL}article?language=${locale}`
-  );
-  if (postsFetch.ok) {
-    const posts = await postsFetch.json();
-    console.log(posts);
-  } else {
-    console.error(postsFetch);
+  try {
+    const postsFetch = await fetch(
+      `${process.env.SERVER_URL}article?language=${locale}`
+    );
+    if (postsFetch.ok) {
+      const posts = await postsFetch.json();
+      console.log(posts);
+    } else {
+      console.error(postsFetch);
+    }
+  } catch (error) {
+    console.error(error);
   }
 
   return (

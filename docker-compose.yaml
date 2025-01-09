@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  nextjs-app:
+    image: dauid64/blog-facilitando-bits
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    command: ["node", "server.js"]
