@@ -64,5 +64,3 @@ jobs:
           docker compose -f docker-compose-interface.yaml down
           docker compose -f docker-compose-interface.yaml pull
           docker compose -f docker-compose-interface.yaml up -d
-
-    

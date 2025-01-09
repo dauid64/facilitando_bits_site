@@ -9,7 +9,7 @@ export default function Header() {
     const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
 
     return (
-        <header className="bg-slate-900 text-white p-4 w-full h-16">
+        <header className="bg-slate-900 text-white p-4 w-full">
             <div className="flex justify-around items-center">
                 <div className="flex flex-col items-center bg-orange-500 rounded-full justify-center text-center" style={{ width: 40, height: 40 }}></div>
                 <HeaderItems open={false}/>
