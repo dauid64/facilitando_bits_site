@@ -1,24 +1,24 @@
 import { mockPosts } from "../../../constants/posts";
 import CardPost from "@/components/posts/CardPost";
-// import { getLocale } from "next-intl/server";
+import { getLocale } from "next-intl/server";
 
 export default async function Home() {
-  // const locale = await getLocale();
+  const locale = await getLocale();
 
   const posts = mockPosts;
-  // try {
-  //   const postsFetch = await fetch(
-  //     `${process.env.SERVER_URL}article?language=${locale}`
-  //   );
-  //   if (postsFetch.ok) {
-  //     const posts = await postsFetch.json();
-  //     console.log(posts);
-  //   } else {
-  //     console.error(postsFetch);
-  //   }
-  // } catch (error) {
-  //   console.error(error);
-  // }
+  try {
+    const postsFetch = await fetch(
+      `${process.env.SERVER_URL}article?language=${locale}`
+    );
+    if (postsFetch.ok) {
+      const posts = await postsFetch.json();
+      console.log(posts);
+    } else {
+      console.error(postsFetch);
+    }
+  } catch (error) {
+    console.error(error);
+  }
 
   return (
     <div className="m-16">
