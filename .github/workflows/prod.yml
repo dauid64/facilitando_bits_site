@@ -61,6 +61,7 @@ jobs:
         password: ${{ secrets.DROPLET_PASSWORD }}
         script: |
           cd ~
+          export NEXT_PUBLIC_SERVER_URL=${{ secrets.NEXT_PUBLIC_SERVER_URL }}
           docker compose -f docker-compose-interface.yaml down
           docker compose -f docker-compose-interface.yaml pull
           docker compose -f docker-compose-interface.yaml up -d
