@@ -6,4 +6,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    environment:
+      - name=value
     command: ["node", "server.js"]
