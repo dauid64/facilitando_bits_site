@@ -3,6 +3,9 @@
 # Base image
 FROM node:18-alpine AS base
 
+# Define build argument
+ARG NEXT_PUBLIC_SERVER_URL
+
 # Install dependencies only when needed
 FROM base AS deps
 RUN apk add --no-cache libc6-compat
@@ -17,6 +20,9 @@ FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+
+# Pass environment variable to build
+ENV NEXT_PUBLIC_SERVER_URL=${NEXT_PUBLIC_SERVER_URL}
 
 # Build the application
 RUN npm run build

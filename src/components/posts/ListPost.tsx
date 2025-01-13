@@ -17,6 +17,7 @@ export default function ListPost() {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                console.log(`${process.env.NEXT_PUBLIC_SERVER_URL}`)
                 const postsFetch = await fetch(
                   `${process.env.NEXT_PUBLIC_SERVER_URL}/article?language=${locale}`
                 );
