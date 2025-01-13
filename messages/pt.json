@@ -18,5 +18,11 @@
       "span2": "O principal objetivo deste site é compartilhar conhecimento e promover discussões construtivas sobre tecnologia, uma área pela qual sou profundamente apaixonado. Além de servir como um portfólio para meus projetos e artigos.",
       "span3": "Meu foco será, em grande parte, na linguagem Rust, que considero uma tecnologia incrível, mas que ainda é pouco debatida e explorada, especialmente aqui no Brasil. Acredito no enorme potencial e nos benefícios que o Rust pode trazer para o desenvolvimento de software, e espero contribuir para aumentar sua adoção e entendimento na comunidade.",
       "span4": "Claro que não irei me limitar apenas a Rust, pretendo falar sobre outras linguagens, tecnologias e assuntos que achar interessante e que tenha algum conhecimento para compartilhar aqui. Fique à vontade para comentar nos artigos, me mandar mensagens e sugestões de temas para artigos futuros, estou sempre aberto a novas ideias e sugestões."
+    },
+    "listPost": {
+      "prev": "Voltar",
+      "next": "Próximo",
+      "empty": "Artigos não encontrados",
+      "total": "Total de artigos"
     }
 }

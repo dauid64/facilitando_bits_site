@@ -18,5 +18,11 @@
       "span2": "The main goal of this site is to share knowledge and foster constructive discussions about technology, an area I am deeply passionate about. It also serves as a portfolio for my projects and articles.",
       "span3": "My focus will largely be on the Rust programming language, which I consider an amazing technology, yet still under-discussed and underexplored, especially here in Brazil. I believe in the immense potential and benefits that Rust can bring to software development, and I hope to contribute to increasing its adoption and understanding within the community.",
       "span4": "Of course, I won't limit myself to Rust alone. I plan to discuss other programming languages, technologies, and topics that I find interesting and have knowledge to share here. Feel free to comment on articles, send me messages, and suggest topics for future articles. I'm always open to new ideas and suggestions."
+    },
+    "listPost": {
+      "prev": "Previous",
+      "next": "Next",
+      "empty": "No articles found",
+      "total": "Total articles"
     }
 }
