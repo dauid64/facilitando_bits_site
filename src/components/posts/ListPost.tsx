@@ -18,7 +18,7 @@ export default function ListPost() {
         const fetchData = async () => {
             try {
                 const postsFetch = await fetch(
-                  `${process.env.NEXT_PUBLIC_SERVER_URL}article?language=${locale}`
+                  `${process.env.NEXT_PUBLIC_SERVER_URL}/article?language=${locale}`
                 );
                 if (postsFetch.ok) {
                   const data = await postsFetch.json();
